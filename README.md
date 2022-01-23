@@ -30,6 +30,13 @@ The software and web-based application used for this analysis are:
 There is a description of the differences in ride-sharing data among the different city types. 
 Ride-sharing data include the total rides, total drivers, total fares, average fare per ride and driver, and total fare by city type.
 
+As stated earlier PyBer serves three city types: Rural, Urban and Suburban. To showcase the ride-sharing data by city type the following summary DataFrame was created:
+
+![PyBer_summary_df[(PyBer_summary_df.png)
+
+The summary DataFrame shows urban cities had the highest number of rides, drivers, amount of fares as well as average fare per ride and average fare per driver.
+
+
 ## Summary
 There is a statement summarizing three business recommendations to the CEO for addressing any disparities among the city types. 
 
