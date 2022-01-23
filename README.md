@@ -57,11 +57,14 @@ weekly_range_df = filter_daterange_df.resample('W').sum()
 weekly_range_df
 ```
 
-The sum of the fares for each week is represented in the below DataFrame: 
+The sum of the fares per city type for each week is represented in the below DataFrame: 
 
 ![sumfares_perweek_percitytype](sumfares_perweek_percitytype.png)
 
+The highest performing week for rural was week 2019-04-07 settling them at $501.24. Surburban's highest performing week was week 2019-02-24 settling them at $1,412.74. As per Urban, its highest performing week was week 2019-03-10 settling them at $2,470.93.
+
 This data was then plotted using the **df.plot() function**. The code block is as follows:
+
 
 ```
 from matplotlib import style
@@ -73,14 +76,19 @@ plt.xlabel(' ')
 plt.tight_layout()
 plt.savefig("analysis/PyBer_fare_summary.png")
 ```
-This multiple-line graph shows the total fares for each week by city type. Based on the legend, the blue line represents Rural, the red line represents Suburban and the yellow line represents Urban each being a different city type.
 
-![PyBer_fare_summary](PyBer_fare_summary.png)
+This multiple-line graph shows the total fares for each week by city type. Based on the legend, the blue line represents Rural, the red line represents Suburban, and the yellow line represents Urban each being a different city type.
+
+![PyBer_fare_summary](analysis/PyBer_fare_summary.png)
 
 ## Summary
-There is a statement summarizing three business recommendations to the CEO for addressing any disparities among the city types. 
+It is evident there is a disparity among all three city types. In order to have a more predicting ride activity in Rural, Suburban and Urban cities, here are the following business recommendations:  
 
+1. To hire more drivers in Rural and Suburban cities perhaps with an incentive program of completing the first 50 rides in 60 days so that all ride requests are serviced.
+2. More advertisements and marketing programs targeting Rural cities to generate more awareness of PyBer the ride-sharing app that can facilitate rides any time anywhere at an affordable rate.
+3. Encourage users in Urban cities to book Pyber for longer ride destinations such as, to the airport, vacation spots in nearby cities and perhaps for moving purposes which are all reasons that can add to higher fares per ride and per driver.
 
+In summary, an exploratory analysis on city and ride data was completed in order to generate a summary DataFrame of the ride-sharing data by city type. This data was then represented in a multiple-line chart so that it can be used to inform discussion and assist the CEO and management to determine affordability for underserved neighborhoods.
 
 
 
