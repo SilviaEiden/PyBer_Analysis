@@ -27,14 +27,19 @@ The software and web-based application used for this analysis are:
 * Matplotlib 
 
 ### Outcomes 
-There is a description of the differences in ride-sharing data among the different city types. 
-Ride-sharing data include the total rides, total drivers, total fares, average fare per ride and driver, and total fare by city type.
+The summary Dataframe is a high-level snapshot of PyBer's key metrics: 
+
+- Total Rides
+- Total Drivers
+- Total Fares
+- Average Fare per Ride
+- Average Fare per Driver
 
 As stated earlier PyBer serves three city types: Rural, Urban and Suburban. To showcase the ride-sharing data by city type the following summary DataFrame was created:
 
 ![PyBer_summary_df[(PyBer_summary_df.png)
 
-The summary DataFrame shows urban cities had the highest number of rides, drivers, amount of fares as well as average fare per ride and average fare per driver.
+In the summary DataFrame, the urban cities have the highest number of total rides at 1,625, total drivers at 2,405, and total amount of fares at $39,854.38. However, urban cities have the lowest average fare per ride at $24.53 and average fare per driver at $16.57. Clearly, this market is sustained by a high demand of rides and a high supply of drivers. As per the rural cities, it has the lowest number of total rides at 125 and total drivers at 78, although due to the low supply of drivers and the long distances between destinations it has the highest average fare per ride at $34.62 and average fare per driver at $55.49. The overall ride activity in Suburban cities places them in the middle of urban and rural cities, but its important to note the demand of rides is higher than the supply of drivers, thus resulting at a higher-end of average fare per ride at $30.97 and average fare per driver at $39.50.     
 
 
 ## Summary
